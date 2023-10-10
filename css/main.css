@@ -1,0 +1,1221 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+
+/*================================main-navigation========================= */
+
+.main-navigaton{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    background-color: #034238;
+    border-top:11px solid white ;
+    z-index: 9999999;
+}
+
+.main-navigaton ul a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+
+.main-navigaton a .icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: white;
+    transition: .3s;
+    overflow: hidden;
+    
+}
+
+.main-navigaton li:hover a .icon{
+    background-color: #025d53;
+    overflow: visible;
+}
+
+.main-navigaton a .icon::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -24px;
+    width: 20px;
+    height: 20px;
+    border-top-right-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.main-navigaton a .icon::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -24px;
+    width: 20px;
+    height: 20px;
+    border-top-left-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    transition: all 1s;
+}
+
+
+
+
+
+
+.main-navigaton a .nav-text{
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 2px;
+    transform: translateY(20px);
+    transition: .5s;
+    opacity: 0;
+}
+
+
+/* -----for active------ */
+
+.main-navigaton .active a .icon{
+    transform: translateY(-35px);
+    background-color: #025d53;
+    border: 6px solid white;
+    overflow: visible;
+}
+
+
+.main-navigaton .active a .icon::before,
+.main-navigaton .active a .icon::after{
+    box-shadow: 0 -10px 0 0 white;
+    opacity: 1;
+}
+
+.main-navigaton .active a .nav-text{
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+
+
+
+
+
+
+/* ===============================header============================ */
+
+
+.h-navigation .search .icon{
+    background-color: #025d53;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color: white;
+    font-size: 20px;
+}
+
+.h-navigation .search .input-group{
+    height: 80%;
+}
+
+.h-navigation .icon1{
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+}
+
+.h-navigation .contact p{
+    color: white;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.h-navigation .contact span{
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+}
+
+.h-navigation .cart .icon{
+    color: white;
+    font-size: 22px;
+}
+
+
+/* -------bottom nav */
+
+.h-bottom-nav .drop1 button{
+    background-color: #025d53;
+    color: white;
+}
+
+.h-bottom-nav .drop2 button{
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.h-bottom-nav ul a{
+    color: white;
+    transition: all .5s;
+}
+
+.h-bottom-nav ul li:hover a{
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* ----second navigation---- */
+
+.h-small-nav img {
+    width: 100px;
+}
+
+.h-small-nav button .circle{
+    background-color: #025d53;
+}
+
+
+
+
+/* ================================home slider============================= */
+
+.slide{
+    height: 100vh;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.slide-1{
+    background-color: #fbf6ee;
+    animation-name: slide-1;
+}
+
+.slide-2{
+    height: 110%;
+    animation-name: slide-2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /* background-image: url('../images/slider/s2/img-slider2.png'); */
+    /* transform: scale(1.1, 1.1)); */
+}
+
+.slide .img-2{ 
+    height: auto;
+    bottom: 10%;
+    left: 30%;
+}
+
+.slide .img-3{
+    height: auto;
+}
+
+.slide .card{
+    width: 30%;
+}
+
+.slide .card h6{
+    letter-spacing: 8px;
+    color: #00766b;
+}
+
+
+@keyframes slide-1 {
+    0%{
+        transform: translateX(-10px);
+    }
+
+    50%{
+        transform: translateX(10px);
+    }
+
+    100%{
+        transform: translateX(-10px);
+    }
+}
+
+
+@keyframes slide-2 {
+    0%{
+        transform: translateY(-20px);
+    }
+
+    50%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(-20px);
+    }
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:576px) {
+    .slide{
+        height: 50vh;
+    }
+
+    .slide .card{
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .slide{
+        height: 75vh;
+    }
+
+    .slide .card{
+        width: 80%;
+    }
+
+}
+
+
+
+
+
+
+/* =========================Beauty Essentials====================== */
+
+.b-essentials img:hover{
+    animation-name: b-essentials;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes b-essentials {
+    0%{
+        transform: scale(1, 1);
+    }
+
+    50%{
+        transform: scale(1.05, 1.05);
+    }
+
+    100%{
+        transform: scale(1, 1);
+    }
+}
+
+.b-essentials h5:hover{
+    color: #00766b;
+}
+
+
+
+
+
+
+/* ==================sell===================== */
+
+/* ------------best selling------------- */
+
+
+.best-selling .card-title a, 
+.C-F-B-E-main .card-title a {
+    width: fit-content;
+    font-size: 11px;
+    color: #999;
+    font-weight: 600;
+}
+
+.best-selling .card-title a:hover,
+.C-F-B-E-main .card-title a:hover{
+    color: #00766b;
+}
+
+.best-selling .card-text a,
+.C-F-B-E-main .card-text a{
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.best-selling .card-text a:hover,
+.C-F-B-E-main .card-text a:hover{
+    color: #00766b;
+}
+
+.best-selling .fw-bold,
+.C-F-B-E-mian .fw-bold {
+    color: #00766b;
+}
+
+
+
+.best-selling .circles .btn{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+}
+
+.best-selling .btn1,
+.best-selling .btn4{
+    background-color: #00766b;
+}
+
+.best-selling .btn2,
+.best-selling .btn5{
+    background-color: #fbbfb4;
+}
+
+.best-selling .btn3{
+    background-color: #faf2e5;
+}
+
+.best-selling .circles .btn i{
+    display: none;
+}
+
+#btnradio1:checked ~ .btn1 i,
+#btnradio2:checked ~ .btn2 i,
+#btnradio3:checked ~ .btn3 i,
+#btnradio4:checked ~ .btn4 i,
+#btnradio5:checked ~ .btn5 i{
+    display: block;
+}
+
+
+
+
+
+.best-selling .for-img .img2,
+.C-F-B-E-main .for-img .img2{
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transform: scale(1.1, 1.1);
+    transition: .3s ease;
+}
+
+.best-selling .card:hover .img2,
+.C-F-B-E-main .card:hover .img2{
+    z-index: 1;
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.for-img::after{
+    content: 'Select options';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 18%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transform: translateY(101%);
+    transition: all .3s;
+}
+
+.best-selling .card:hover .for-img::after,
+.C-F-B-E-main .card:hover .for-img::after{
+    transform: translatey(0);
+}
+
+
+.best-selling .button,
+.C-F-B-E-main .button{
+    bottom: 20%; 
+    right: 10px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all .3s;
+    z-index: -1;
+}
+
+.best-selling .card:hover .button,
+.C-F-B-E-main .card:hover .button{
+    transform: translateX(0);
+    z-index: 2;
+    opacity: 1;
+}
+
+.best-selling .button .btn,
+.C-F-B-E-main .button .btn{
+    background-color: white;
+    color: black;
+    /* font-size: 20px; */
+}
+
+
+.best-selling .exampleModal .button1,
+.C-F-B-E-main .exampleModal .button1{
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 50%;
+}
+
+.best-selling .exampleModal .heart:hover,
+.C-F-B-E-main .exampleModal .heart:hover {
+    color: #00766b !important;
+}
+
+.best-selling .exampleModal .social,
+.C-F-B-E-main .exampleModal .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+}
+
+.best-selling .exampleModal .social1,
+.C-F-B-E-main .exampleModal .social1{
+    background-color: #1b4e9b;
+}
+.best-selling .exampleModal .social2,
+.C-F-B-E-main .exampleModal .social2{
+    background-color: #1c9deb;
+}
+.best-selling .exampleModal .social3,
+.C-F-B-E-main .exampleModal .social3{
+    background-color: #026fac;
+}
+.best-selling .exampleModal .social4,
+.C-F-B-E-main .exampleModal .social4{
+    background-color: #d44f42;
+}
+
+
+.best-selling .exampleModal .social a,
+.C-F-B-E-main .exampleModal .social a{
+    color: white;
+}
+
+.best-selling .exampleModal .para,
+.C-F-B-E-main .exampleModal .para{
+    font-size: 10px;
+}
+
+.best-selling .exampleModal .poper,
+.C-F-B-E-main .exampleModal .poper{
+    /* content: 'View details'; */
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 9%;
+    border-radius: 5px;
+    background-color: #00766b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    opacity: 0;
+    transition: all .3s;
+}
+
+
+.best-selling .exampleModal .pop:hover .poper,
+.C-F-B-E-main .exampleModal .pop:hover .poper{
+    bottom: 0;
+    opacity: 1;
+}
+
+.best-selling .exampleModal .poper:hover,
+.C-F-B-E-main .exampleModal .poper:hover{
+    background-color: black;
+}
+
+
+
+.w-s-w-h{
+    background-image: url('../images/bg-icon-box-home1.jpg');
+    background-size: cover;
+}
+
+
+.w-s-w-h h2{
+    text-decoration: wavy;
+}
+
+
+
+
+/* =========================C-F-B-E====================== */
+
+.C-F-B-E-top .card h6{
+    letter-spacing: 8px;
+}
+
+.C-F-B-E-top .card h2{
+    color: #c4743f;
+}
+
+.C-F-B-E-top .card .btn{
+    transition: all .3s;
+}
+
+.C-F-B-E-top .card .btn:hover{
+    background-color: #025d53;
+    color: white;
+}
+
+.C-F-B-E-top .card-2 h2{
+    color: #025d53;
+}
+
+
+
+
+/* ==============================P-S-E-D================================ */
+
+.P-S-E-D{
+    background-image: url('../images/p-s-e-d/bg-before-after.jpg');
+    background-size: cover;
+}
+
+.P-S-E-D .progress{
+    height: 8px;
+    background-color: rgba(95, 95, 95, 0.148);
+}
+
+.P-S-E-D .progress .progress-bar{
+    background-color: #025d53;
+}
+
+
+.P-S-E-D .forground{
+    background-image: url('../images/p-s-e-d/before.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all .5s;
+    
+}
+
+.P-S-E-D .forground .translate-middle{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #00766b;
+    border: solid 2px ;
+}
+
+
+.P-S-E-D .img .btn1{
+    top: 3%;
+    left: 5%;
+}
+
+.P-S-E-D .img .btn2{
+    top: 3%;
+    right: 5%;
+}
+
+
+
+.P-S-E-D input{
+    display: none;
+}
+
+.P-S-E-D .button-bar{
+    margin: 0 auto;
+    /* height: 0;    */
+    width: 200px;
+    background-color: #025d53;
+    display: flex;
+    border: solid 1px #00766b;
+}
+
+.P-S-E-D .button-bar .button{
+    z-index: 1;
+}
+
+.P-S-E-D .button-bar .btn{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    border: solid 1px #00766b;
+    transition: all .5s;
+}
+
+.P-S-E-D .incris-bar{
+    width: 101%;
+    height: 8px;
+    /* background-color: #00766b; */
+}
+
+.P-S-E-D .bar{
+    background-color: #00766b;
+    transition: all .5s
+}
+
+
+#f-b-img1:checked ~ .button-bar .button .btn1,
+
+#f-b-img2:checked ~ .button-bar .button .btn2,
+#f-b-img2:checked ~ .button-bar .button .btn1,
+
+#f-b-img3:checked ~ .button-bar .button .btn3,
+#f-b-img3:checked ~ .button-bar .button .btn2,
+#f-b-img3:checked ~ .button-bar .button .btn1,
+
+#f-b-img4:checked ~ .button-bar .button .btn4,
+#f-b-img4:checked ~ .button-bar .button .btn3,
+#f-b-img4:checked ~ .button-bar .button .btn2,
+#f-b-img4:checked ~ .button-bar .button .btn1,
+
+#f-b-img5:checked ~ .button-bar .button .btn5,
+#f-b-img5:checked ~ .button-bar .button .btn4,
+#f-b-img5:checked ~ .button-bar .button .btn3,
+#f-b-img5:checked ~ .button-bar .button .btn2,
+#f-b-img5:checked ~ .button-bar .button .btn1{
+    background-color: #00766b;
+    border: solid 3px white;
+    box-shadow: 0 0 8px #00766b;
+}
+
+#f-b-img2:checked ~ .button-bar .button .btn1,
+
+#f-b-img3:checked ~ .button-bar .button .btn2,
+#f-b-img3:checked ~ .button-bar .button .btn1,
+
+#f-b-img4:checked ~ .button-bar .button .btn3,
+#f-b-img4:checked ~ .button-bar .button .btn2,
+#f-b-img4:checked ~ .button-bar .button .btn1,
+
+#f-b-img5:checked ~ .button-bar .button .btn4,
+#f-b-img5:checked ~ .button-bar .button .btn3,
+#f-b-img5:checked ~ .button-bar .button .btn2,
+#f-b-img5:checked ~ .button-bar .button .btn1{
+    background-color: #00766b;
+    border: 0;
+    box-shadow: 0 0 0;
+}
+
+
+
+#f-b-img1:checked ~ .img .forground{
+    width: 0;
+}
+
+#f-b-img1:checked ~ .button-bar .incris-bar .bar{
+    width: 20% !important;
+
+}
+
+#f-b-img2:checked ~ .img .forground{
+    width: 25%;
+}
+
+#f-b-img2:checked ~ .button-bar .incris-bar .bar{
+    width: 40% !important;
+
+}
+
+#f-b-img3:checked ~ .img .forground{
+    width: 50%;
+}
+
+#f-b-img3:checked ~ .button-bar .incris-bar .bar{
+    width: 60% !important;
+}
+
+#f-b-img4:checked ~ .img .forground{
+    width: 75%;
+}
+
+#f-b-img4:checked ~ .button-bar .incris-bar .bar{
+    width: 80% !important;
+}
+
+#f-b-img5:checked ~ .img .forground{
+    width: 100%;
+}
+
+#f-b-img5:checked ~ .button-bar .incris-bar .bar{
+    width: 100% !important;
+}
+
+
+
+/* ---mid-P-S-E-D---- */
+.mid-P-S-E-D{
+    background-image: url('../images/bg-testi-01.jpg');
+}
+
+.mid-P-S-E-D .card-title{
+    font-size: 100px !important;
+    color: #d3d3d3;
+}
+
+.mid-P-S-E-D .card-text{
+    font-size: 25px;
+    color: #555;
+}
+
+.mid-P-S-E-D .img{
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+}
+
+.mid-P-S-E-D button{
+    height: fit-content;
+    width: fit-content;
+    font-size: 35px;
+    border-radius: 4px;
+}
+
+.mid-P-S-E-D button:hover{
+    background-color: black !important;
+}
+
+
+/* ------bottom-P-S-E-D------ */
+
+.bottom-P-S-E-D img{
+    opacity: .3;
+    transition: all .5s;
+}
+
+.bottom-P-S-E-D img:hover{
+    opacity: 1;
+}
+
+
+
+
+
+/* ==============================footer============================ */
+
+.f-top{
+    background-color: #034238;
+}
+
+.f-top .contact-us .card-title{
+    font-size: 23px;
+}
+
+.f-top .contact-us .card-subtitle{
+    font-size: 14px;
+    color: #d8d5d5;
+}
+
+.f-top .contact-us .input-group{
+    height: 50px;
+}
+
+.f-top .contact-us .input-group span{
+    background-color: #00766b;
+    font-size: 30px;
+    color: white;
+}
+
+
+.f-bottom{
+    background-color: #00766b;
+}
+
+
+
+
+
+
+
+
+/* =========================================shop========================================= */
+
+.shop-head{
+    background-image: url('../images/bg-breadcrumb.jpg');
+    background-size: cover;
+}
+
+
+
+
+/* ========================product==================== */
+
+
+/* -----------big-filter--------------- */
+
+.big-filter .checkbox{
+    height: 20px;
+    width: 20px;
+    border: solid 2px #999;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-filter .form-check-label:hover span{
+    color: #00766b;
+}
+
+#flexCheckDefault:checked ~ .form-check-label .checkbox,
+#flexCheckChecked:checked ~ .form-check-label .checkbox,
+#flexCheckChecked1:checked ~ .form-check-label .checkbox,
+#flexCheckChecked2:checked ~ .form-check-label .checkbox,
+#flexCheckChecked3:checked ~ .form-check-label .checkbox,
+#flexCheckChecked4:checked ~ .form-check-label .checkbox,
+#flexCheckChecked5:checked ~ .form-check-label .checkbox,
+#flexCheckChecked6:checked ~ .form-check-label .checkbox,
+#flexCheckChecked7:checked ~ .form-check-label .checkbox,
+#flexCheckChecked8:checked ~ .form-check-label .checkbox,
+#flexCheckChecked9:checked ~ .form-check-label .checkbox,
+#flexCheckChecked10:checked ~ .form-check-label .checkbox,
+#flexCheckChecked11:checked ~ .form-check-label .checkbox,
+#flexCheckChecked12:checked ~ .form-check-label .checkbox,
+
+#flexCheckDefault1:checked ~ .form-check-label .checkbox,
+#flexCheckChecked01:checked ~ .form-check-label .checkbox,
+#flexCheckChecked1-1:checked ~ .form-check-label .checkbox,
+#flexCheckChecked21:checked ~ .form-check-label .checkbox,
+#flexCheckChecked31:checked ~ .form-check-label .checkbox,
+#flexCheckChecked41:checked ~ .form-check-label .checkbox,
+#flexCheckChecked51:checked ~ .form-check-label .checkbox,
+#flexCheckChecked61:checked ~ .form-check-label .checkbox,
+#flexCheckChecked71:checked ~ .form-check-label .checkbox,
+#flexCheckChecked81:checked ~ .form-check-label .checkbox,
+#flexCheckChecked91:checked ~ .form-check-label .checkbox,
+#flexCheckChecked101:checked ~ .form-check-label .checkbox,
+#flexCheckChecked111:checked ~ .form-check-label .checkbox,
+#flexCheckChecked121:checked ~ .form-check-label .checkbox{
+    background-color: #00766b;
+    border: none;
+}
+
+#flexCheckDefault:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked1:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked2:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked3:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked4:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked5:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked6:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked7:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked8:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked9:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked10:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked11:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked12:checked ~ .form-check-label .checkbox .icon,
+
+#flexCheckDefault1:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked01:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked1-1:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked21:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked31:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked41:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked51:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked61:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked71:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked81:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked91:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked101:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked111:checked ~ .form-check-label .checkbox .icon,
+#flexCheckChecked121:checked ~ .form-check-label .checkbox .icon{
+    display: block !important;
+    color: white;
+}
+
+#flexCheckDefault:checked ~ .form-check-label span,
+#flexCheckChecked:checked ~ .form-check-label span,
+#flexCheckChecked1:checked ~ .form-check-label span,
+#flexCheckChecked2:checked ~ .form-check-label span,
+#flexCheckChecked3:checked ~ .form-check-label span,
+#flexCheckChecked4:checked ~ .form-check-label span,
+#flexCheckChecked5:checked ~ .form-check-label span,
+#flexCheckChecked6:checked ~ .form-check-label span,
+#flexCheckChecked7:checked ~ .form-check-label span,
+#flexCheckChecked8:checked ~ .form-check-label span,
+#flexCheckChecked9:checked ~ .form-check-label span,
+#flexCheckChecked10:checked ~ .form-check-label span,
+#flexCheckChecked11:checked ~ .form-check-label span,
+#flexCheckChecked12:checked ~ .form-check-label span,
+
+#flexCheckDefault1:checked ~ .form-check-label span,
+#flexCheckChecked01:checked ~ .form-check-label span,
+#flexCheckChecked1-1:checked ~ .form-check-label span,
+#flexCheckChecked21:checked ~ .form-check-label span,
+#flexCheckChecked31:checked ~ .form-check-label span,
+#flexCheckChecked41:checked ~ .form-check-label span,
+#flexCheckChecked51:checked ~ .form-check-label span,
+#flexCheckChecked61:checked ~ .form-check-label span,
+#flexCheckChecked71:checked ~ .form-check-label span,
+#flexCheckChecked81:checked ~ .form-check-label span,
+#flexCheckChecked91:checked ~ .form-check-label span,
+#flexCheckChecked101:checked ~ .form-check-label span,
+#flexCheckChecked111:checked ~ .form-check-label span,
+#flexCheckChecked121:checked ~ .form-check-label span{
+    font-weight: 600;
+    color: #00766b;
+}
+
+.big-filter .color .circle{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #00766b;
+}
+
+.big-filter .color .c-2{
+    background-color: #fbbfb4;
+}
+
+.big-filter .color .c-3{
+    background-color: #faf2e5;
+}
+
+#flexRadioDefault1:checked ~ .form-check-label .c-1 .d-none,
+#flexRadioDefault2:checked ~ .form-check-label .c-2 .d-none,
+#flexRadioDefault3:checked ~ .form-check-label .c-3 .d-none,
+#flexRadioDefault11:checked ~ .form-check-label .c-1 .d-none,
+#flexRadioDefault21:checked ~ .form-check-label .c-2 .d-none,
+#flexRadioDefault31:checked ~ .form-check-label .c-3 .d-none{
+    display: block !important;
+}
+
+.big-filter .p-t label{
+    font-size: 14px;
+    width: fit-content;
+}
+
+
+#btncheck1:checked ~ label,
+#btncheck2:checked ~ label,
+#btncheck3:checked ~ label,
+#btncheck4:checked ~ label,
+#btncheck5:checked ~ label,
+#btncheck6:checked ~ label,
+#btncheck7:checked ~ label,
+#btncheck8:checked ~ label,
+#btncheck9:checked ~ label,
+#btncheck10:checked ~ label,
+#btncheck11:checked ~ label,
+#btncheck12:checked ~ label,
+#btncheck13:checked ~ label,
+
+#btncheck1-1:checked ~ label,
+#btncheck21:checked ~ label,
+#btncheck31:checked ~ label,
+#btncheck41:checked ~ label,
+#btncheck51:checked ~ label,
+#btncheck61:checked ~ label,
+#btncheck71:checked ~ label,
+#btncheck81:checked ~ label,
+#btncheck91:checked ~ label,
+#btncheck101:checked ~ label,
+#btncheck111:checked ~ label,
+#btncheck121:checked ~ label,
+#btncheck131:checked ~ label,
+.big-filter .p-t label:hover,
+.blog-right .p-t label:hover{
+    background-color: #00766b !important;
+    color: white;
+}
+
+
+
+
+
+/* ==========================nav big-fill========================== */
+
+.big-fill .nav-link,
+.s-fill .nav-link{
+    color: #999;
+}
+
+.s-fill .btn{
+    font-size: 20px;
+}
+
+
+.sell-bottom{
+    /* height: 50px; */
+    background-image: url('../images/banner-bottom-shop.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.sell-bottom p{
+    font-size: 20px;
+    color: #025d53;
+}
+
+
+
+
+/* =================================blog-nav=========================== */
+
+
+
+
+.blog-nav li a:hover{
+    color: #00766b !important;
+}
+
+
+
+/* ------------------------------main-blog------------------------------ */
+
+
+.blog-left h5 a:hover{
+    color: #00766b;
+}
+
+.blog-left a:hover{
+    color: #00766b !important;
+}
+
+.blog-left .a-c .circle{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.blog-left .circle img{
+    height: 100%;
+    width: 100%;
+}
+
+.blog-left .row .btn:hover{
+    background-color: #025d53 !important;
+    color: white !important;
+}
+
+.blog-left .date{
+    top: 5%;
+    background-color: white;
+}
+
+.blog-left .buttons{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.blog-left .buttons .btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.blog-left .buttons .btn:hover{
+    background-color: #00766b;
+    color: white;
+}
+
+
+
+
+
+.blog-right input{
+    background-color: #e9ecef;
+}
+
+.blog-right ul li{
+    list-style:disc;
+    margin-bottom: 10px;
+    color: #00766b;
+}
+
+.blog-right a:hover{
+    color: #00766b !important;
+}
+
+
+
+
+
+
+/* ==================================contact============================= */
+
+.contact-head{
+    background-image: url('../images/breadcrumb-page-02.jpg');
+    background-size: cover;
+}
+
+
+
+.contact-top .heading{
+    margin: 0 auto;
+}
+
+.contact-top .icon-main .circle{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #dff0ef;
+    font-size: 50px;
+    color: #00766b;
+}
+
+
+
+.contact-bottom .form{
+    margin: 0 auto;
+}
+
+.contact-bottom .form-floating{
+    height: fit-content;
+}
+
+.contact-bottom .form-floating input{
+    height: 40px;
+    background-color: #f5f5f5;
+}
+
+
+.contact-bottom .form-floating textarea{
+    height: 235px !important;
+    background-color: #f5f5f5;
+
+}

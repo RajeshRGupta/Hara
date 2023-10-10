@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- =================ICON LINK================== -->
+
+    <!-- ------------------IONICON------------------ -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- ---------------FONTAWESOME-------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/5c777b7988.js" crossorigin="anonymous"></script>
+
+    <!-- ---------------BOOTSTRAP---------------------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- -----------------GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
+
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+</head>
+
+<body>
+
+
+    <!-- ===============================main navigation============================== -->
+
+
+    <nav class="main-navigaton d-xl-none">
+
+        <ul class="nav justify-content-center gap-sm-5 px-sm-5 mx-sm-5">
+            <li class="nav-item">
+                <a class="nav-link p-0 " href="./home.html">
+                    <span class="icon">
+                        <ion-icon name="home"></ion-icon>
+                    </span>
+                    <span class="nav-text">Home</span>
+                </a>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link p-0" href="./shop.html">
+                    <span class="icon">
+                        <ion-icon name="storefront"></ion-icon>
+                    </span>
+                    <span class="nav-text">Shop</span>
+                </a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link p-0" href="./blog.html">
+                    <span class="icon">
+                        <i class="fa-brands fa-blogger"></i>
+                    </span>
+                    <span class="nav-text">Blog</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link p-0" href="./contact.html">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <span class="nav-text">Contact</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+
+
+
+    <!-- ============================header=================================== -->
+
+
+    <header class="h-navigation w-100">
+        <nav class="h-big-nav d-none d-xl-block" style="background-color: #034238;">
+            <div class="row py-3 px-5 mx-5 ">
+                <div class="col-2">
+                    <img src="./images/icon/logo.svg" alt="">
+                </div>
+                <div class="col-6 d-flex align-items-center search ps-4">
+                    <div class="input-group">
+                        <button class="btn dropdown-toggle bg-light" type="button" data-bs-toggle="dropdown">All
+                            Categories</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                        <input type="text" class="form-control">
+                        <a href="#" class="btn icon"><ion-icon name="search"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="col-2 d-flex align-items-center contact">
+                    <div class="row px-2 align-items-center ">
+                        <div class="col-3 icon1"><i class="bi bi-chat-square"></i></div>
+                        <div class="col-9 p-1 m-0 d-flex flex-column ">
+                            <p class="m-0">CALL US FREE</p> <span>884-123-4567</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 d-flex align-items-center justify-content-end cart">
+                    <div class="row align-items-center">
+                        <div class="col-4 icon"><i class="bi bi-person"></i></div>
+                        <div class="col-4 icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                        <div class="col-4 icon"><i class="fa-regular fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border border-light w-100 m-0">
+
+            <!-- -bottom nav- -->
+
+            <div class="row py-3 px-5 mx-5 py-3 px-5 mx-5 h-bottom-nav">
+                <div class="col d-flex align-items-center justify-content-between">
+                    <div class="dropdown drop1">
+                        <button class="btn dropdown-toggle d-flex gap-3 align-items-center" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                            <i class="bi bi-grid icon"></i>All Department
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="dropdown drop2">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <nav class="d-block d-xl-none h-small-nav fixed-top bg-light pb-2">
+            <div class="row m-0">
+                <div class="col py-2 px-3 d-flex justify-content-between">
+                    <a class="btn py-0 px-1" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <i class="bi bi-list fs-3"></i>
+                    </a>
+
+                    <img src="./images/icon/logo (1).svg" alt="">
+
+                    <button type="button" class="btn p-0 position-relative">
+                        <i class="bi bi-cart3 fs-5"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill circle">
+                            0
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="input-group px-4">
+                        <span class="input-group-text p-0 m-0" style="background-color: transparent;">
+                            <a href="#" class="btn icon2 px-2 py-1"><ion-icon name="search" class="fs-4"></ion-icon></a>
+                        </span>
+                        <input type="text" class="form-control p-0 px-2" aria-label="Amount (to the nearest dollar)">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
+                    images, lists,
+                    etc.
+                </div>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <!-- ===============================blog-nav============================ -->
+
+    <nav class="blog-nav px-md-5 bg-light py-3 mb-5">
+        <ul class="nav px-lg-5">
+            <li class="nav-item">
+                <a class="nav-link text-secondary p-0" href="./home.html">Home</a>
+            </li>
+            <li class="nav-item text-secondary line px-3">
+                <ion-icon name="remove-outline"></ion-icon>
+            </li>
+            <li class="nav-item text-dark">
+                blog
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <!-- ===============================main-blog==============================- -->
+
+
+    <section>
+
+        <div class="container p-0 main-blog mb-5">
+
+            <h2 class="p-0 fw-bold mb-5">Gifts set</h2>
+            <div class="row g-0">
+                <div class="col-xl-8 blog-left">
+
+                    <div class="row row-cols-1 row-cols-md-2 g-0">
+
+                        <div class="col p-3">
+                            <div class="card border-0 position-relative" style="width: 100%;">
+                                <img src="./images/blog/blog-01.jpg" class="card-img-top" alt="">
+                                <div class="card-body p-0">
+                                    <p class="card-text m-0 mt-2"><i class="fa-regular fa-folder text-success fs-5"></i>
+                                        <a href="#" class="text-secondary">Cream Blush</a>, <a href="#"
+                                            class="text-secondary">Gifts set</a>
+                                    </p>
+                                    <h5 class="card-title fw-bold"><a href="#"> Proin velit metus placerat quis enim</a>
+                                    </h5>
+                                    <div class="a-c d-flex align-items-center gap-2">
+                                        <div class="circle overflow-hidden "><img
+                                                src="./images/icon/75d23af433e0cea4c0e45a56dba18b30.png" alt=""></div>
+                                        <p class="m-0"><a href="#" class="text-secondary">Admin</a></p>
+                                        <span class="d-flex align-items-center gap-1">
+                                            <ion-icon name="chatbubbles-outline" class="text-success"></ion-icon>
+                                            <a href="#" class="text-secondary">0 comments</a>
+                                        </span>
+                                    </div>
+
+                                    <hr>
+
+                                    <a href="#" class="btn btn-dark p-0 px-3 py-2">Read more <i
+                                            class="fa-solid fa-right-from-bracket"></i></a>
+                                </div>
+
+                                <div class="date position-absolute px-3">
+                                    OCTOBER 21, 2021
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col p-3">
+                            <div class="card border-0 position-relative" style="width: 100%;">
+                                <img src="./images/blog/blog-02.jpg" class="card-img-top" alt="">
+                                <div class="card-body p-0">
+                                    <p class="card-text m-0 mt-2"><i class="fa-regular fa-folder text-success fs-5"></i>
+                                        <a href="#" class="text-secondary">Gifts set</a>, <a href="#"
+                                            class="text-secondary">Hair & Body</a>
+                                    </p>
+                                    <h5 class="card-title fw-bold"><a href="#"> Donec laoreet massa varius elit
+                                            ullamco</a>
+                                    </h5>
+                                    <div class="a-c d-flex align-items-center gap-2">
+                                        <div class="circle overflow-hidden "><img
+                                                src="./images/icon/75d23af433e0cea4c0e45a56dba18b30.png" alt=""></div>
+                                        <p class="m-0"><a href="#" class="text-secondary">Admin</a></p>
+                                        <span class="d-flex align-items-center gap-1">
+                                            <ion-icon name="chatbubbles-outline" class="text-success"></ion-icon>
+                                            <a href="#" class="text-secondary">0 comments</a>
+                                        </span>
+                                    </div>
+
+                                    <hr>
+
+                                    <a href="#" class="btn btn-dark p-0 px-3 py-2">Read more <i
+                                            class="fa-solid fa-right-from-bracket"></i></a>
+                                </div>
+
+                                <div class="date position-absolute px-3">
+                                    OCTOBER 21, 2021
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col p-3">
+                            <div class="card border-0 position-relative" style="width: 100%;">
+                                <img src="./images/blog/blog-03.jpg" class="card-img-top" alt="">
+                                <div class="card-body p-0">
+                                    <p class="card-text m-0 mt-2"><i class="fa-regular fa-folder text-success fs-5"></i>
+                                        <a href="#" class="text-secondary">Gifts set</a>, <a href="#"
+                                            class="text-secondary">Make Up</a>
+                                    </p>
+                                    <h5 class="card-title fw-bold"><a href="#"> A Beginner’s Guide to Fashion</a>
+                                    </h5>
+                                    <div class="a-c d-flex align-items-center gap-2">
+                                        <div class="circle overflow-hidden "><img
+                                                src="./images/icon/75d23af433e0cea4c0e45a56dba18b30.png" alt=""></div>
+                                        <p class="m-0"><a href="#" class="text-secondary">Admin</a></p>
+                                        <span class="d-flex align-items-center gap-1">
+                                            <ion-icon name="chatbubbles-outline" class="text-success"></ion-icon>
+                                            <a href="#" class="text-secondary">0 comments</a>
+                                        </span>
+                                    </div>
+
+                                    <hr>
+
+                                    <a href="#" class="btn btn-dark p-0 px-3 py-2">Read more <i
+                                            class="fa-solid fa-right-from-bracket"></i></a>
+                                </div>
+
+                                <div class="date position-absolute px-3">
+                                    OCTOBER 21, 2021
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col p-3">
+                            <div class="card border-0 position-relative" style="width: 100%;">
+                                <img src="./images/blog/blog-04.jpg" class="card-img-top" alt="">
+                                <div class="card-body p-0">
+                                    <p class="card-text m-0 mt-2"><i class="fa-regular fa-folder text-success fs-5"></i>
+                                        <a href="#" class="text-secondary">Gifts set</a>, <a href="#"
+                                            class="text-secondary">Make Up</a>
+                                    </p>
+                                    <h5 class="card-title fw-bold"><a href="#"> How To Start A Business With fashion</a>
+                                    </h5>
+                                    <div class="a-c d-flex align-items-center gap-2">
+                                        <div class="circle overflow-hidden "><img
+                                                src="./images/icon/75d23af433e0cea4c0e45a56dba18b30.png" alt=""></div>
+                                        <p class="m-0"><a href="#" class="text-secondary">Admin</a></p>
+                                        <span class="d-flex align-items-center gap-1">
+                                            <ion-icon name="chatbubbles-outline" class="text-success"></ion-icon>
+                                            <a href="#" class="text-secondary">0 comments</a>
+                                        </span>
+                                    </div>
+
+                                    <hr>
+
+                                    <a href="#" class="btn btn-dark p-0 px-3 py-2">Read more <i
+                                            class="fa-solid fa-right-from-bracket"></i></a>
+                                </div>
+
+                                <div class="date position-absolute px-3">
+                                    OCTOBER 21, 2021
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col p-3">
+                            <div class="card border-0 position-relative" style="width: 100%;">
+                                <img src="./images/blog/blog-06.jpg" class="card-img-top" alt="">
+                                <div class="card-body p-0">
+                                    <p class="card-text m-0 mt-2"><i class="fa-regular fa-folder text-success fs-5"></i>
+                                        <a href="#" class="text-secondary">Gifts set</a>, <a href="#"
+                                            class="text-secondary">Make Up</a>
+                                    </p>
+                                    <h5 class="card-title fw-bold"><a href="#"> Will perfect your fashion: Read or miss
+                                            out</a>
+                                    </h5>
+                                    <div class="a-c d-flex align-items-center gap-2">
+                                        <div class="circle overflow-hidden "><img
+                                                src="./images/icon/75d23af433e0cea4c0e45a56dba18b30.png" alt=""></div>
+                                        <p class="m-0"><a href="#" class="text-secondary">Admin</a></p>
+                                        <span class="d-flex align-items-center gap-1">
+                                            <ion-icon name="chatbubbles-outline" class="text-success"></ion-icon>
+                                            <a href="#" class="text-secondary">0 comments</a>
+                                        </span>
+                                    </div>
+
+                                    <hr>
+
+                                    <a href="#" class="btn btn-dark p-0 px-3 py-2">Read more <i
+                                            class="fa-solid fa-right-from-bracket"></i></a>
+                                </div>
+
+                                <div class="date position-absolute px-3">
+                                    OCTOBER 21, 2021
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col p-3">
+                            <div class="card border-0 position-relative" style="width: 100%;">
+                                <img src="./images/blog/blog-07.jpg" class="card-img-top" alt="">
+                                <div class="card-body p-0">
+                                    <p class="card-text m-0 mt-2"><i class="fa-regular fa-folder text-success fs-5"></i>
+                                        <a href="#" class="text-secondary">Gifts set</a>, <a href="#"
+                                            class="text-secondary">Make Up</a>
+                                    </p>
+                                    <h5 class="card-title fw-bold"><a href="#"> Have You Heard? fashion Is Your Best Bet
+                                            To Grow</a>
+                                    </h5>
+                                    <div class="a-c d-flex align-items-center gap-2">
+                                        <div class="circle overflow-hidden "><img
+                                                src="./images/icon/75d23af433e0cea4c0e45a56dba18b30.png" alt=""></div>
+                                        <p class="m-0"><a href="#" class="text-secondary">Admin</a></p>
+                                        <span class="d-flex align-items-center gap-1">
+                                            <ion-icon name="chatbubbles-outline" class="text-success"></ion-icon>
+                                            <a href="#" class="text-secondary">0 comments</a>
+                                        </span>
+                                    </div>
+
+                                    <hr>
+
+                                    <a href="#" class="btn btn-dark p-0 px-3 py-2">Read more <i
+                                            class="fa-solid fa-right-from-bracket"></i></a>
+                                </div>
+
+                                <div class="date position-absolute px-3">
+                                    OCTOBER 21, 2021
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col p-3">
+                            <div class="card border-0 position-relative" style="width: 100%;">
+                                <img src="./images/blog/blog-10.jpg" class="card-img-top" alt="">
+                                <div class="card-body p-0">
+                                    <p class="card-text m-0 mt-2"><i class="fa-regular fa-folder text-success fs-5"></i>
+                                        <a href="#" class="text-secondary">Gifts set</a>, <a href="#"
+                                            class="text-secondary">Make Up</a>
+                                    </p>
+                                    <h5 class="card-title fw-bold"><a href="#"> Why Ignoring fashion Will Cost You
+                                            Time</a>
+                                    </h5>
+                                    <div class="a-c d-flex align-items-center gap-2">
+                                        <div class="circle overflow-hidden "><img
+                                                src="./images/icon/75d23af433e0cea4c0e45a56dba18b30.png" alt=""></div>
+                                        <p class="m-0"><a href="#" class="text-secondary">Admin</a></p>
+                                        <span class="d-flex align-items-center gap-1">
+                                            <ion-icon name="chatbubbles-outline" class="text-success"></ion-icon>
+                                            <a href="#" class="text-secondary">0 comments</a>
+                                        </span>
+                                    </div>
+
+                                    <hr>
+
+                                    <a href="#" class="btn btn-dark p-0 px-3 py-2">Read more <i
+                                            class="fa-solid fa-right-from-bracket"></i></a>
+                                </div>
+
+                                <div class="date position-absolute px-3">
+                                    OCTOBER 21, 2021
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col p-3">
+                            <div class="card border-0 position-relative" style="width: 100%;">
+                                <img src="./images/blog/blog-11.jpg" class="card-img-top" alt="">
+                                <div class="card-body p-0">
+                                    <p class="card-text m-0 mt-2"><i class="fa-regular fa-folder text-success fs-5"></i>
+                                        <a href="#" class="text-secondary">Gifts set</a>, <a href="#"
+                                            class="text-secondary">Nail & wax</a>, <a href="#"
+                                            class="text-secondary">Tips</a>
+                                    </p>
+                                    <h5 class="card-title fw-bold"><a href="#"> Sail Your Colours to the Mast</a>
+                                    </h5>
+                                    <div class="a-c d-flex align-items-center gap-2">
+                                        <div class="circle overflow-hidden "><img
+                                                src="./images/icon/75d23af433e0cea4c0e45a56dba18b30.png" alt=""></div>
+                                        <p class="m-0"><a href="#" class="text-secondary">Admin</a></p>
+                                        <span class="d-flex align-items-center gap-1">
+                                            <ion-icon name="chatbubbles-outline" class="text-success"></ion-icon>
+                                            <a href="#" class="text-secondary">0 comments</a>
+                                        </span>
+                                    </div>
+
+                                    <hr>
+
+                                    <a href="#" class="btn btn-dark p-0 px-3 py-2">Read more <i
+                                            class="fa-solid fa-right-from-bracket"></i></a>
+                                </div>
+
+                                <div class="date position-absolute px-3">
+                                    OCTOBER 21, 2021
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="buttons d-flex gap-2">
+                        <button class="btn p-0 d-flex align-items-center justify-content-center bg-success text-light" type="button">1</button>
+                        <button class="btn p-0 d-flex align-items-center justify-content-center" type="button">2</button>
+                        <button class="btn p-0 d-flex align-items-center justify-content-center" type="button"><i class="bi bi-arrow-right"></i></button>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-4 blog-right">
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Search</h5>
+                            <hr>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control border-0" placeholder="Search..."
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <span class="input-group-text border-0" id="basic-addon2"><i
+                                        class="bi bi-search"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Categories</h5>
+                            <hr>
+                            <ul class="lh-lg">
+                                <li><a href="" class="text-secondary">Cream Blush (3)</a></li>
+                                <li><a href="" class="text-secondary">Gifts set (9)</a></li>
+                                <li><a href="" class="text-secondary">Hair & Body (3)</a></li>
+                                <li><a href="" class="text-secondary">Make Up (4)</a></li>
+                                <li><a href="" class="text-secondary">Nail & wax (3)</a></li>
+                                <li><a href="" class="text-secondary">Skin Care (3)</a></li>
+                                <li><a href="" class="text-secondary">Sun Care (3)</a></li>
+                                <li><a href="" class="text-secondary">Tips (3)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Recent Posts</h5>
+                            <hr>
+                            <div class="card mb-3" style="max-width: 100%;">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <img src="./images/blog/blog-01-100x100.jpg" class="img-fluid rounded-start"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <p class="card-text"><small class="text-muted"><a href="">October 21,
+                                                        2021</a></small></p>
+                                            <h6 class="card-title fw-bold"><a href="">Proin velit metus placerat quis enim</a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3" style="max-width: 100%;">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <img src="./images/blog/blog-02-100x100.jpg" class="img-fluid rounded-start"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <p class="card-text"><small class="text-muted"><a href="">October 21,
+                                                        2021</a></small></p>
+                                            <h6 class="card-title fw-bold"><a href="">Donec laoreet massa varius elit ullamco</a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3" style="max-width: 100%;">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <img src="./images/blog/blog-03-100x100.jpg" class="img-fluid rounded-start"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <p class="card-text"><small class="text-muted"><a href="">October 21,
+                                                        2021</a></small></p>
+                                            <h6 class="card-title fw-bold"><a href="">A Beginner’s Guide to Fashion</a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Tags</h5>
+                            <hr>
+
+                            <div class="row gap-3 mb-4 p-t">
+
+                                <div class="col p-0 m-0">
+                                  <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                  <label class="btn bg-light d-flex justify-content-center py-1 px-2 m-0"
+                                    for="btncheck1">Accessories</label>
+                                </div>
+                    
+                    
+                                <div class="col p-0 m-0">
+                                  <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                                  <label class="btn bg-light d-flex justify-content-center py-1 px-2 m-0 "
+                                    for="btncheck2"><span>Anti</span><span>-</span><span>Ageing</span></label>
+                                </div>
+                    
+                    
+                                <div class="col p-0 m-0">
+                                  <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                                  <label class="btn bg-light d-flex justify-content-center py-1 px-2 m-0" for="btncheck3">Bags</label>
+                                </div>
+                    
+                    
+                                <div class="col p-0 m-0">
+                                  <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                                  <label class="btn bg-light d-flex justify-content-center py-1 px-2 m-0"
+                                    for="btncheck4"><span>Cleansers</span><span>&</span><span>Toners</span></label>
+                                </div>
+                    
+                    
+                                <div class="col p-0 m-0">
+                                  <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                                  <label class="btn bg-light d-flex justify-content-center py-1 px-2 m-0"
+                                    for="btncheck5">Exfoliators</label>
+                                </div>
+                    
+                    
+                                <div class="col p-0 m-0">
+                                  <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+                                  <label class="btn bg-light d-flex justify-content-center py-1 px-2 m-0" for="btncheck6">Gadgets</label>
+                                </div>
+                    
+                    
+                                <div class="col p-0 m-0">
+                                  <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off">
+                                  <label class="btn bg-light d-flex justify-content-center py-1 px-2 m-0" for="btncheck7">Men</label>
+                                </div>
+                    
+                    
+                                <div class="col p-0 m-0">
+                                  <input type="checkbox" class="btn-check" id="btncheck8" autocomplete="off">
+                                  <label class="btn bg-light d-flex justify-content-center py-1 px-2 m-0"
+                                    for="btncheck8">Moisturisers</label>
+                                </div>
+                    
+                    
+                                <div class="col p-0 m-0">
+                                  <input type="checkbox" class="btn-check" id="btncheck9" autocomplete="off">
+                                  <label class="btn bg-light d-flex justify-content-center py-1 px-2 m-0 "
+                                    for="btncheck9"><span>Oils</span><span>&</span><span>Serums</span></label>
+                                </div>
+                    
+                    
+                                <div class="col p-0 m-0">
+                                  <input type="checkbox" class="btn-check" id="btncheck10" autocomplete="off">
+                                  <label class="btn bg-light d-flex justify-content-center py-1 px-2 m-0" for="btncheck10">Skincare</label>
+                                </div>
+                    
+                    
+                                <div class="col p-0 m-0">
+                                  <input type="checkbox" class="btn-check" id="btncheck11" autocomplete="off">
+                                  <label class="btn bg-light d-flex justify-content-center py-1 px-2 m-0 gap-2"
+                                    for="btncheck11"><span>Skincare</span><span> Treatments</span></label>
+                                </div>
+                    
+                    
+                                <div class="col p-0 m-0">
+                                  <input type="checkbox" class="btn-check" id="btncheck12" autocomplete="off">
+                                  <label class="btn bg-light d-flex justify-content-center py-1 px-2 m-0" for="btncheck12">Tools</label>
+                                </div>
+                    
+                    
+                                <div class="col p-0 m-0">
+                                  <input type="checkbox" class="btn-check" id="btncheck13" autocomplete="off">
+                                  <label class="btn bg-light d-flex justify-content-center py-1 px-2 m-0" for="btncheck13">Women</label>
+                                </div>
+                    
+                              </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===========================footer========================== -->
+
+    <footer class="mb-5 mb-xl-0">
+        <div class="container-fluid py-5 px-md-5 f-top">
+            <div class="row px-md-5 contact-us">
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card bg-transparent border-0" style="width: 100%;">
+                        <div class="card-body">
+                            <h4 class="card-title text-light mb-4">Contact Us</h4>
+                            <h6 class="card-subtitle mb-3 lh-lg">If you have any question, please contact us at
+                                support@example.com</h6>
+                            <div class="row">
+                                <div class="col-2 py-0 d-flex align-items-top">
+                                    <span class="material-symbols-outlined text-light fs-1">
+                                        help_center
+                                    </span>
+                                </div>
+                                <div class="col-10">
+                                    <h6 class="card-subtitle fw-bold text-light p-0">CALL US FREE</h6>
+                                    <h2 class="text-light">088-767-6555</h2>
+                                </div>
+                            </div>
+
+                            <div class="social d-flex gap-4">
+                                <span><a href="#" class="text-light"><i class="fa-brands fa-facebook-f"></i></a></span>
+                                <span><a href="#" class="text-light"><i class="fa-brands fa-twitter"></i></a></span>
+                                <span><a href="#" class="text-light"><i class="fa-brands fa-instagram"></i></a></span>
+                                <span><a href="#" class="text-light"><i class="fa-brands fa-youtube"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card bg-transparent border-0" style="width: 100%;">
+                        <div class="card-body">
+                            <h4 class="card-title text-light mb-4">Store Location</h4>
+                            <h6 class="card-subtitle mb-2 lh-lg">Address: 25 West 21th Street, Miami FL, USA</h6>
+                            <h4 class="card-title text-light mb-4">Store Location</h4>
+                            <h6 class="card-subtitle mb-2 lh-lg">Monday – Saturday: 8:00 am – 4:00pm Sunday: Close</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card bg-transparent border-0" style="width: 100%;">
+                        <div class="card-body">
+                            <h4 class="card-title text-light mb-4">Quick Links</h4>
+                            <h6 class="m-0"><a href="#" class="card-subtitle mb-2 lh-lg">Shipping & Returns</a></h6>
+                            <h6 class="m-0"><a href="#" class="card-subtitle mb-2 lh-lg">Privacy Policy</a></h6>
+                            <h6 class="m-0"><a href="#" class="card-subtitle mb-2 lh-lg">Term Of Use</a></h6>
+                            <h6 class="m-0"><a href="#" class="card-subtitle mb-2 lh-lg">Wishlist</a></h6>
+                            <h6 class="m-0"><a href="#" class="card-subtitle mb-2 lh-lg">Compare</a></h6>
+                            <h6 class="m-0"><a href="#" class="card-subtitle mb-2 lh-lg">Subscribe</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card bg-transparent border-0" style="width: 100%;">
+                        <div class="card-body">
+                            <h4 class="card-title text-light mb-4">Sign Up for Our Newsletter</h4>
+                            <h6 class="card-subtitle mb-2 lh-lg">Leave your email to get all hot deals & news which
+                                benefit you most!</h6>
+
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Your email address"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <span class="input-group-text border-0" id="basic-addon2"><i
+                                        class="fa-brands fa-telegram"></i></span>
+                            </div>
+
+                            <img src="./images/payment.png" alt="">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid f-bottom pt-4 pb-5 px-5">
+            <div class="row px-md-5">
+                <div class="col-lg-6 px-md-5">
+                    <h6 class="text-light">Copyright © 2022 Hara. All Rights Reserved.</h6>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-md-end px-md-5">
+                    <ul class="d-flex gap-4">
+                        <li><a href="#" class="text-light">About Us</a></li>
+                        <li><a href="#" class="text-light">FAQs</a></li>
+                        <li><a href="#" class="text-light">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

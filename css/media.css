@@ -1,0 +1,24 @@
+@media screen and (max-width:1200px) {
+    .home-slider{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    .slide-images{
+        height: 70vh;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    .slide-images{
+        height: 7+0vh;
+    }
+}
+
+
+@media screen and (max-width:576px){
+    .slide-images{
+        height: 50vh;
+    }
+}

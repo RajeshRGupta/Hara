@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- =================ICON LINK================== -->
+
+    <!-- ------------------IONICON------------------ -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- ---------------FONTAWESOME-------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/5c777b7988.js" crossorigin="anonymous"></script>
+
+    <!-- ---------------BOOTSTRAP---------------------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- -----------------GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
+
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+
+</head>
+
+<body>
+
+
+    <!-- ===============================main navigation============================== -->
+
+
+    <nav class="main-navigaton d-xl-none">
+
+        <ul class="nav justify-content-center gap-sm-5 px-sm-5 mx-sm-5">
+            <li class="nav-item">
+                <a class="nav-link p-0 " href="./home.html">
+                    <span class="icon">
+                        <ion-icon name="home"></ion-icon>
+                    </span>
+                    <span class="nav-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link p-0" href="./shop.html">
+                    <span class="icon">
+                        <ion-icon name="storefront"></ion-icon>
+                    </span>
+                    <span class="nav-text">Shop</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link p-0" href="./blog.html">
+                    <span class="icon">
+                        <i class="fa-brands fa-blogger"></i>
+                    </span>
+                    <span class="nav-text">Blog</span>
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link p-0" href="./contact.html">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <span class="nav-text">Contact</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+
+
+
+    <!-- ============================header=================================== -->
+
+
+    <header class="h-navigation w-100">
+        <nav class="h-big-nav d-none d-xl-block" style="background-color: #034238;">
+            <div class="row py-3 px-5 mx-5 ">
+                <div class="col-2">
+                    <img src="./images/icon/logo.svg" alt="">
+                </div>
+                <div class="col-6 d-flex align-items-center search ps-4">
+                    <div class="input-group">
+                        <button class="btn dropdown-toggle bg-light" type="button" data-bs-toggle="dropdown">All
+                            Categories</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                        <input type="text" class="form-control">
+                        <a href="#" class="btn icon"><ion-icon name="search"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="col-2 d-flex align-items-center contact">
+                    <div class="row px-2 align-items-center ">
+                        <div class="col-3 icon1"><i class="bi bi-chat-square"></i></div>
+                        <div class="col-9 p-1 m-0 d-flex flex-column ">
+                            <p class="m-0">CALL US FREE</p> <span>884-123-4567</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 d-flex align-items-center justify-content-end cart">
+                    <div class="row align-items-center">
+                        <div class="col-4 icon"><i class="bi bi-person"></i></div>
+                        <div class="col-4 icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                        <div class="col-4 icon"><i class="fa-regular fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border border-light w-100 m-0">
+
+            <!-- -bottom nav- -->
+
+            <div class="row py-3 px-5 mx-5 py-3 px-5 mx-5 h-bottom-nav">
+                <div class="col d-flex align-items-center justify-content-between">
+                    <div class="dropdown drop1">
+                        <button class="btn dropdown-toggle d-flex gap-3 align-items-center" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                            <i class="bi bi-grid icon"></i>All Department
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="dropdown drop2">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <nav class="d-block d-xl-none h-small-nav fixed-top bg-light pb-2">
+            <div class="row m-0">
+                <div class="col py-2 px-3 d-flex justify-content-between">
+                    <a class="btn py-0 px-1" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <i class="bi bi-list fs-3"></i>
+                    </a>
+
+                    <img src="./images/icon/logo (1).svg" alt="">
+
+                    <button type="button" class="btn p-0 position-relative">
+                        <i class="bi bi-cart3 fs-5"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill circle">
+                            0
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="input-group px-4">
+                        <span class="input-group-text p-0 m-0" style="background-color: transparent;">
+                            <a href="#" class="btn icon2 px-2 py-1"><ion-icon name="search" class="fs-4"></ion-icon></a>
+                        </span>
+                        <input type="text" class="form-control p-0 px-2" aria-label="Amount (to the nearest dollar)">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
+                    images, lists,
+                    etc.
+                </div>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <!-- ============================contact================================ -->
+
+    <section>
+        <div class="container-fluid contact-head p-5 mt-5 mt-xl-0 mb-5">
+            <div class="card bg-transparent border-0 py-5">
+                <div class="card-body">
+                    <h1 class="card-title mb-4">Contact Us</h1>
+                    <h5 class="card-subtitle mb-2 text-muted"><a href="home.html" class="text-muted">Home</a><span> -
+                        </span> <span class="text-dark">Page</span></h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- ===================================contact-main============================ -->
+
+    <section>
+
+
+        <div class="container contact-top mb-5">
+            <div class="heading w-md-50">
+                <h2 class="text-center">Beauty Essentials</h2>
+                <p class="text-center">We’re talking about clean beauty gift sets, of course – and we’ve got a bouquet
+                    of beauties for yourself or someone you love.</p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col">
+                    <div class="card border-0" style="width: 100%;">
+                        <div class="icon-main">
+                            <div class="circle"><ion-icon name="location-outline"></ion-icon></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Store Location</h5>
+                            <p class="card-text text-secondary">Address: 25 West 21th Street, Miami FL, USA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0" style="width: 100%;">
+                        <div class="icon-main">
+                            <div class="circle"><ion-icon name="call-outline"></ion-icon></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Contact</h5>
+                            <p class="card-text text-secondary">Hotline: 1900 26886</p>
+                            <p class="card-text text-secondary">E-mail: info@harashop.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0" style="width: 100%;">
+                        <div class="icon-main">
+                            <div class="circle"><i class="bi bi-clock"></i></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Open Hours</h5>
+                            <p class="card-text text-secondary">Monday – Saturday: 8:00 am – 4:00pm</p>
+                            <p class="card-text text-secondary">Sunday: Close</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <section>
+        <div class="container contact-mid mb-5">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d317893.1993960357!2d-0.119554!3d51.503297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2sus!4v1677646741597!5m2!1sen!2sus"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+    <section>
+
+        <div class="container contact-bottom">
+            <div class="form w-md-75 mb-5">
+                <h5 class="fw-bold">Send Message</h5>
+                <p>Fill out this form and our specialists will contact you shortly for detailed consultation.</p>
+
+
+                <form action="" class="text-center">
+                    <div class="row gy-4 gx-0">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control text-secondary border-0 p-0 ps-3"
+                                    id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput" class="text-secondary p-0 pt-1 ps-3">Your Name*</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-floating "">
+                                <input type=" email" class="form-control text-secondary border-0 p-0 ps-3"
+                                id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput" class="text-secondary p-0 pt-1 ps-3">Your Email*</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-floating mt-4">
+                        <textarea class="form-control border-0" placeholder="Leave a comment here"
+                            id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2" class="text-secondary ps-4">Comments</label>
+                    </div>
+
+                    <button type="button" class="btn btn-success mt-4 px-5 py-2">Submit</button>
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <footer class="mb-5 mb-xl-0">
+        <div class="container-fluid py-5 px-md-5 f-top">
+            <div class="row px-md-5 contact-us">
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card bg-transparent border-0" style="width: 100%;">
+                        <div class="card-body">
+                            <h4 class="card-title text-light mb-4">Contact Us</h4>
+                            <h6 class="card-subtitle mb-3 lh-lg">If you have any question, please contact us at
+                                support@example.com</h6>
+                            <div class="row">
+                                <div class="col-2 py-0 d-flex align-items-top">
+                                    <span class="material-symbols-outlined text-light fs-1">
+                                        help_center
+                                    </span>
+                                </div>
+                                <div class="col-10">
+                                    <h6 class="card-subtitle fw-bold text-light p-0">CALL US FREE</h6>
+                                    <h2 class="text-light">088-767-6555</h2>
+                                </div>
+                            </div>
+
+                            <div class="social d-flex gap-4">
+                                <span><a href="#" class="text-light"><i class="fa-brands fa-facebook-f"></i></a></span>
+                                <span><a href="#" class="text-light"><i class="fa-brands fa-twitter"></i></a></span>
+                                <span><a href="#" class="text-light"><i class="fa-brands fa-instagram"></i></a></span>
+                                <span><a href="#" class="text-light"><i class="fa-brands fa-youtube"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card bg-transparent border-0" style="width: 100%;">
+                        <div class="card-body">
+                            <h4 class="card-title text-light mb-4">Store Location</h4>
+                            <h6 class="card-subtitle mb-2 lh-lg">Address: 25 West 21th Street, Miami FL, USA</h6>
+                            <h4 class="card-title text-light mb-4">Store Location</h4>
+                            <h6 class="card-subtitle mb-2 lh-lg">Monday – Saturday: 8:00 am – 4:00pm Sunday: Close</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card bg-transparent border-0" style="width: 100%;">
+                        <div class="card-body">
+                            <h4 class="card-title text-light mb-4">Quick Links</h4>
+                            <h6 class="m-0"><a href="#" class="card-subtitle mb-2 lh-lg">Shipping & Returns</a></h6>
+                            <h6 class="m-0"><a href="#" class="card-subtitle mb-2 lh-lg">Privacy Policy</a></h6>
+                            <h6 class="m-0"><a href="#" class="card-subtitle mb-2 lh-lg">Term Of Use</a></h6>
+                            <h6 class="m-0"><a href="#" class="card-subtitle mb-2 lh-lg">Wishlist</a></h6>
+                            <h6 class="m-0"><a href="#" class="card-subtitle mb-2 lh-lg">Compare</a></h6>
+                            <h6 class="m-0"><a href="#" class="card-subtitle mb-2 lh-lg">Subscribe</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card bg-transparent border-0" style="width: 100%;">
+                        <div class="card-body">
+                            <h4 class="card-title text-light mb-4">Sign Up for Our Newsletter</h4>
+                            <h6 class="card-subtitle mb-2 lh-lg">Leave your email to get all hot deals & news which
+                                benefit you most!</h6>
+
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Your email address"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <span class="input-group-text border-0" id="basic-addon2"><i
+                                        class="fa-brands fa-telegram"></i></span>
+                            </div>
+
+                            <img src="./images/payment.png" alt="">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid f-bottom pt-4 pb-5 px-5">
+            <div class="row px-md-5">
+                <div class="col-lg-6 px-md-5">
+                    <h6 class="text-light">Copyright © 2022 Hara. All Rights Reserved.</h6>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-md-end px-md-5">
+                    <ul class="d-flex gap-4">
+                        <li><a href="#" class="text-light">About Us</a></li>
+                        <li><a href="#" class="text-light">FAQs</a></li>
+                        <li><a href="#" class="text-light">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
